@@ -1,0 +1,8 @@
+<div class="sidebar_nav">
+  <h2>Users</h2>
+  <mat-nav-list role="list" *ngFor="let user of users">
+    <mat-list-item role="listitem" routerLink="/profile/{{user.login}}"><img matListAvatar src="{{user.avatar_url}}"
+        alt="" style="margin-right: 20px;">
+      {{user.login}}</mat-list-item>
+  </mat-nav-list>
+</div>
